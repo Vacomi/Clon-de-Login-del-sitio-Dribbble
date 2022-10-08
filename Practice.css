@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    background-color: #3a3a3aa2;
+    color: palegreen;
+    padding: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logotipo {
+    width: 90px;
+    margin-top: 20px;
+}
+
+h3 {
+    margin: 20px 0 20px 0;
+}
+
+.sociales {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-google {
+    background-color: #1A73E8;
+    border: none; 
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+.btn-google:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.logo-google {
+    width   : 35px;
+    height  : 35px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: white;
+    color: black;
+    display: block;
+}
+.logo-google img {
+    width: 100%;
+}
+.btn-google span {
+    color: white;
+    font-weight: 700;
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+@media (min-width: 350px) {
+    .btn-google span {
+        padding: 0 40px;
+        font-size: 16px;
+    }
+}
+
+.btn-twitter {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+}
+.btn-twitter:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+.btn-twitter picture {
+    width: 47px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-twitter img {
+    width: 60%;
+}
+
+/* SEPARADOR */
+.separador {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.separador hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.separador span {
+    color: #6E6D87;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.entradas{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.entradas input {
+    background-color: #f3f3f4;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 7px;
+    outline: none;
+    /* outline-color: #1A73E8; */
+}
+.entradas input:hover {
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 10px #ee2bb07d;
+}
+.entradas input:focus {
+    background-color: white;
+    border: 1px solid #ea4c899e;
+    box-shadow: 0 0 10px #ee2bb07d;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nombre {
+        width: 45%;
+    }
+    .usuario {
+        width: 45%;
+        align-self: flex-end;
+    }
+    .correo {
+        width: 100%;
+    }
+    .contrasenia {
+        width: 100%;
+    }
+}
+
+/* TERMINOS */
+.terminos {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* BOTON */
+.btn-submit {
+    width: 100%;
+    background-color: #ea4c89;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}

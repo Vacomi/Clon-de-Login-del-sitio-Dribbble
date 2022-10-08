@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="Practice.css">
+</head>
+
+<body>
+    <h1>Replicando el Login del sitio web de: <a href="https://dribbble.com/signup/new">dribbble.com</a> con solo HTML y CSS</h1>
+
+
+    <div class="container">
+
+        <div class="logotipo">
+            <img src="https://logos-download.com/wp-content/uploads/2016/09/Dribbble_logo_black.png" alt="">
+        </div>
+
+        <h3>Registrate en el Formulario</h3>
+
+        <section class="sociales">
+
+            <button class="btn-google">
+                <picture class="logo-google">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Logo de Google">
+                </picture>
+                <span>Acceder con Google</span>
+            </button>
+
+            <button class="btn-twitter">
+                <picture>
+                    <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" alt="img de Twitter">
+                </picture>
+            </button>
+
+        </section>
+
+        <div class="separador">
+            <hr>
+            <span>Or</span>
+            <hr>
+        </div>
+
+        <form class="formulario" action="">
+
+            <div class="entradas nombre">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" autocomplete="off">
+            </div>
+
+            <div class="entradas usuario">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" autocomplete="off">
+            </div>
+
+            <div class="entradas correo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="off">
+            </div>
+
+            <div class="entradas contrasenia">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="6+ carácteres">
+            </div>
+
+            <div class="terminos">
+                <input id="checkbox" type="checkbox">
+                <label for="checkbox">Usted acepta que mediante el formulario se puede utilizar su información para
+                enviarle ocasinalmente invitaciones sobre nuestros productos.
+                </label>
+            </div>
+
+            <button type="submit" class="btn-submit">Crear Cuenta</button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
